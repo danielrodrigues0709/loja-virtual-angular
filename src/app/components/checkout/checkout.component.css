@@ -1,9 +1,8 @@
 .resume {
     display: flex;
-    flex-direction: column;
 }
 
-.resume .footer-buttons {
+.footer-buttons {
     display: flex;
     justify-content: flex-end;
 }
@@ -17,6 +16,7 @@
 }
 
 .totals {
-    display: grid;
+    display: flex;
     justify-content: flex-end;
+    flex-direction: column;
 }

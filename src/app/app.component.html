@@ -1,8 +1,8 @@
 <div>
-  <mat-drawer-container class="nav-container" [hasBackdrop]="true">
+  <mat-drawer-container class="nav-container" hasBackdrop="true">
     <mat-drawer #drawer class="nav-sidenav" mode="over" position="end">
       <div class="footer-buttons">
-        <button class="button" mat-button (click)="goToCheckout()">Ir para checkout</button>
+        <button class="button" mat-button (click)="goToCheckout(); drawer.toggle()">Ir para checkout</button>
       </div>
       <br>
       <h3>Meu carrinho</h3>
