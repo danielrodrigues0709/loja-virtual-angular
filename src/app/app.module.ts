@@ -6,6 +6,7 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatInputModule} from '@angular/material/input';
 import {MatIconModule} from '@angular/material/icon';
+import {MatSidenavModule} from '@angular/material/sidenav';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -28,6 +29,7 @@ import { FormsModule } from '@angular/forms';
     MatGridListModule,
     MatInputModule,
     MatIconModule,
+    MatSidenavModule,
     BrowserAnimationsModule
   ],
   providers: [],

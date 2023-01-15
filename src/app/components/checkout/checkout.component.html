@@ -1,1 +1,25 @@
-<p>checkout works!</p>
+<div class="resume">
+    <div class="itens">
+        <h3>Itens:</h3>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </div>
+    <div class="totals">
+        <div class="coupon">
+            <h5>Insira aqui seu cupom de desconto:</h5>
+            <input matInput type="text" [(ngModel)]="coupon">
+            <button class="button" mat-button (click)="applyCoupom()">Aplica Cupom</button>
+        </div>
+        <br>
+        <h5>Valor Total: R$ </h5>
+        <h5>Valor com desconto: R$ </h5>
+        <h2>Valor Final: R$ </h2>
+    </div>
+
+    <div class="footer-buttons">
+        <button class="button" mat-button [routerLink]="['/']">Voltar</button>
+        <button class="button" mat-button (click)="finalize()">Finalizar Compra</button>
+    </div>
+</div>

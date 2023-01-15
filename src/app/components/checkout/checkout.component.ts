@@ -7,9 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CheckoutComponent implements OnInit {
 
+  coupon: string = '';
+  
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  applyCoupom(): void {
+    console.log(this.coupon)
+  }
+
+  finalize(): void {
+    
   }
 
 }

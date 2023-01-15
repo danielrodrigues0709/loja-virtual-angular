@@ -1,0 +1,22 @@
+.resume {
+    display: flex;
+    flex-direction: column;
+}
+
+.resume .footer-buttons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.button {
+    background-color: white;
+    border: 2px solid black;
+    margin-top: 15px;
+    margin-left: 15px;
+    font-weight: bold;
+}
+
+.totals {
+    display: grid;
+    justify-content: flex-end;
+}

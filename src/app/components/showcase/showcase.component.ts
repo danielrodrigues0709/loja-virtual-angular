@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Product } from 'src/app/model/product';
 import { ProductsService } from 'src/app/services/products.service';
 
@@ -11,7 +12,7 @@ export class ShowcaseComponent implements OnInit {
 
   products!: Product[];
 
-  constructor(private productsService: ProductsService) { }
+  constructor(private productsService: ProductsService, private router: Router) { }
 
   ngOnInit(): void {
     this.productsService.getProducts().subscribe((res) => {
@@ -20,6 +21,10 @@ export class ShowcaseComponent implements OnInit {
         prod.qtd = 0
       })
     });
+  }
+
+  goToCheckout(): void {
+    this.router.navigate(['/checkout']);
   }
 
 }

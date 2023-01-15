@@ -1,11 +1,23 @@
 <div>
-  <div class="menu">
-    <img src="../assets/logo.png" style="height: 50px;" alt="logo" class="image">
-    <button class="button" mat-button [routerLink]="['/']">Vitrine</button>
-    <button class="button" mat-button [routerLink]="['/checkout']">Checkout</button>
-  </div>
+  <mat-drawer-container class="nav-container" [hasBackdrop]="true">
+    <mat-drawer #drawer class="nav-sidenav" mode="over" position="end">
+      <div class="footer-buttons">
+        <button class="button" mat-button (click)="goToCheckout()">Ir para checkout</button>
+      </div>
+      <br>
+      <h3>Meu carrinho</h3>
+      <li></li>
+    </mat-drawer>
 
-  <div class="content">
-    <router-outlet></router-outlet>
-  </div>
+    <div class="nav-content">
+      <div class="menu">
+        <img src="../assets/logo.png" style="height: 50px;" alt="logo" class="image">
+        <button class="button" mat-button (click)="drawer.toggle()">Meu carrinho</button>
+      </div>
+      <div class="content">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+
+    </mat-drawer-container>
 </div>
