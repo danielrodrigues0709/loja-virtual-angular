@@ -1,0 +1,17 @@
+.card {
+    margin: 5px 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+.qtd {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.qtdlabel {
+    padding: 0 1rem;
+}
