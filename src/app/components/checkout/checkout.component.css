@@ -20,3 +20,8 @@
     justify-content: flex-end;
     flex-direction: column;
 }
+
+.img {
+    width: 40px;
+    margin: 5px;
+}

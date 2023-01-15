@@ -1,4 +1,6 @@
 import { Injectable } from '@angular/core';
+import { Observable, of } from 'rxjs';
+import { coupons } from 'src/assets/coupons';
 import { Cart } from '../model/cart';
 
 @Injectable({
@@ -8,15 +10,19 @@ export class CheckoutService {
 
   private _checkout!: Cart;
 
-  public get checkout() {
+  public getCheckout() {
     return this._checkout;
   }
 
-  public set checkout(value: Cart) {
+  public setCheckout(value: Cart) {
     this._checkout = value;
   }
 
   cartId!: number;
 
   constructor() { }
+
+  getCoupons(): Observable<any> {
+    return of(coupons);
+  }
 }

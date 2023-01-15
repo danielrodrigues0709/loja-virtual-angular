@@ -2,73 +2,73 @@ export const products = {
     "data": [
         {
             "id": 1,
-            "name": "Shirt 1",
+            "name": "Camisa 1",
             "price": 30.9,
             "img": "../../../assets/shirt.jpg"
         },
         {
-            "id": 1,
-            "name": "Shirt 2",
+            "id": 2,
+            "name": "Camisa 2",
             "price": 40.9,
             "img": "../../../assets/shirt.jpg"
         },
         {
-            "id": 1,
-            "name": "Shirt 3",
+            "id": 3,
+            "name": "Camisa 3",
             "price": 45.9,
             "img": "../../../assets/shirt.jpg"
         },
         {
-            "id": 1,
-            "name": "Shirt 4",
+            "id": 4,
+            "name": "Camisa 4",
             "price": 56.9,
             "img": "../../../assets/shirt.jpg"
         },
         {
-            "id": 1,
-            "name": "Shirt 5",
+            "id": 5,
+            "name": "Camisa 5",
             "price": 50.9,
             "img": "../../../assets/shirt.jpg"
         },
         {
-            "id": 1,
-            "name": "Shirt 6",
+            "id": 6,
+            "name": "Camisa 6",
             "price": 30.9,
             "img": "../../../assets/shirt.jpg"
         },
         {
-            "id": 1,
-            "name": "Shirt 7",
+            "id": 7,
+            "name": "Camisa 7",
             "price": 56.9,
             "img": "../../../assets/shirt.jpg"
         },
         {
-            "id": 1,
-            "name": "Shirt 8",
+            "id": 8,
+            "name": "Camisa 8",
             "price": 50.9,
             "img": "../../../assets/shirt.jpg"
         },
         {
-            "id": 1,
-            "name": "Shirt 9",
+            "id": 9,
+            "name": "Camisa 9",
             "price": 30.9,
             "img": "../../../assets/shirt.jpg"
         },
         {
-            "id": 1,
-            "name": "Shirt 10",
+            "id": 10,
+            "name": "Camisa 10",
             "price": 56.9,
             "img": "../../../assets/shirt.jpg"
         },
         {
-            "id": 1,
-            "name": "Shirt 11",
+            "id": 11,
+            "name": "Camisa 11",
             "price": 50.9,
             "img": "../../../assets/shirt.jpg"
         },
         {
-            "id": 1,
-            "name": "Shirt 12",
+            "id": 12,
+            "name": "Camisa 12",
             "price": 30.9,
             "img": "../../../assets/shirt.jpg"
         }
