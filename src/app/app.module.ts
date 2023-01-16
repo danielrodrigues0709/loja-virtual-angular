@@ -7,18 +7,21 @@ import {MatGridListModule} from '@angular/material/grid-list';
 import {MatInputModule} from '@angular/material/input';
 import {MatIconModule} from '@angular/material/icon';
 import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatDialogModule} from '@angular/material/dialog';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ShowcaseComponent } from './components/showcase/showcase.component';
 import { CheckoutComponent } from './components/checkout/checkout.component';
 import { FormsModule } from '@angular/forms';
+import { CheckoutDialogComponent } from './components/checkout-dialog/checkout-dialog.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ShowcaseComponent,
-    CheckoutComponent
+    CheckoutComponent,
+    CheckoutDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -30,6 +33,7 @@ import { FormsModule } from '@angular/forms';
     MatInputModule,
     MatIconModule,
     MatSidenavModule,
+    MatDialogModule,
     BrowserAnimationsModule
   ],
   providers: [],
