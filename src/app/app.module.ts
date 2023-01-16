@@ -6,8 +6,7 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatInputModule} from '@angular/material/input';
 import {MatIconModule} from '@angular/material/icon';
-import {MatSidenavModule} from '@angular/material/sidenav';
-import {MatDialogModule} from '@angular/material/dialog';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -32,8 +31,7 @@ import { CheckoutDialogComponent } from './components/checkout-dialog/checkout-d
     MatGridListModule,
     MatInputModule,
     MatIconModule,
-    MatSidenavModule,
-    MatDialogModule,
+    MatSnackBarModule,
     BrowserAnimationsModule
   ],
   providers: [],

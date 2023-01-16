@@ -1,9 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { MatDialog } from '@angular/material';
+import { MatSnackBar } from '@angular/material';
 import { Cart } from 'src/app/model/cart';
 import { Coupon } from 'src/app/model/coupon';
 import { CheckoutService } from 'src/app/services/checkout.service';
-import { CheckoutDialogComponent } from '../checkout-dialog/checkout-dialog.component';
 
 @Component({
   selector: 'app-checkout',
@@ -22,7 +21,7 @@ export class CheckoutComponent implements OnInit {
   
   constructor(
     private checkoutService: CheckoutService,
-    public dialog: MatDialog
+    private snackBar: MatSnackBar
   ) { }
 
   ngOnInit(): void {
@@ -43,9 +42,7 @@ export class CheckoutComponent implements OnInit {
   }
 
   finalize(): void {
-    this.dialog.open(CheckoutDialogComponent, {
-      width: '250px',
-    });
+    this.snackBar.open("Compra realizada com sucesso");
   }
 
 }
